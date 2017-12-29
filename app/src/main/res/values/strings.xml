@@ -7,4 +7,40 @@
     <string name="nav_header_subtitle">anandmampuzhakal@hotmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="about_me_txt_one"> A technology enthusiast with over 10+ years of hands-on experience in
+developing software for mobile,web and desktop. Expert in creating the
+scalable and maintainable architecture for mobile apps by combining
+frameworks and tools build from scratch or using commercial/
+noncommittal solutions developed by other vendors.Exposed to server
+side technologies and proficient in data structures and conformable in
+using them to visualise the data using mobile UI frameworks. Had been
+part of game development during the initial period of my career.
+Experienced in managing the team and mentoring them.</string>
+    <string name="about_me_txt_two">The last company I was working with (till 22 Sept 2017) is Neva Innovation
+Labs Pvt.Ltd, Bangalore, India. Our head office is at Silicon Valley US. I was
+heading the android developments for this company. Our most recent
+product is in health domain. It is a combination of Nano technology,
+Android, ML(Machine Learning) and AI (Artificial Intelligence).</string>
+    <string name="about_me_txt_three">My core experience is in android application development, I am
+good in android framework, Android SDK, Tensorflow, Java and Kotlin. I
+have 10+ years of extensive software development experience, in which
+last 8+years is in Android and 8 months in IoS development. Among my
+45+ Android applications, some of them were in top ten in android market
+during certain periods 1.6 years was with Samsung in South Korea with
+their android team for Samsung Galaxy S, Galaxy S2, CHIFF, Sprint S,
+and Honeycomb Tablet. I have also android experience on specific
+embedded devices from NComputing, application for Cisco setup box,
+Payback.</string>
+    <string name="about_me_txt_four">I love to talk about technology and find my own time to keep upto
+date with all the new things which is evolving in technology. I also help
+people to develop their skills by closely woking along with them or through
+opensource portals such as Stackoverflow, Github etc.
+I am holding a valid NZ open work visa, living at Auckland at present and
+available immediately.</string>
+
+    <string name="pageone_fragment_text">Aboutmeone Fragment</string>
+    <string name="pagetwo_fragment_text">Aboutmetwo Fragment</string>
+    <string name="pagethree_fragment_text">Aboutmethree Fragment</string>
+    <string name="pagefour_fragment_text">Aboutmefour Fragment</string>
+
 </resources>

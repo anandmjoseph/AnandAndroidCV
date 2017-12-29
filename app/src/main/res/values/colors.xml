@@ -5,5 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colortheme">#4A4C5B</color>
     <color name="h1">#C44827</color>
-
+    <color name="color_52b0fd">#52b0fd</color>
+    <color name="color_c2ebff">#c2ebff</color>
+    <color name="color_222222">#222222</color>
+    <color name="color_888888">#888888</color>
 </resources>
