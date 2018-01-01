@@ -42,5 +42,12 @@ available immediately.</string>
     <string name="pagetwo_fragment_text">Aboutmetwo Fragment</string>
     <string name="pagethree_fragment_text">Aboutmethree Fragment</string>
     <string name="pagefour_fragment_text">Aboutmefour Fragment</string>
+    <string name="role_one">TECHNICAL ARCHITECT</string>
+    <string name="role_two">MOBILE APP DEVELOPMENT</string>
+    <string name="role_three">ANDROID APP DEVELOPMENT</string>
+    <string name="role_four">ANDROID AUTO APP DEVELOPMENT</string>
+    <string name="role_five">EMBEDDED APP DEVELOPMENT</string>
+    <string name="role_six">REACT NATIVE APP DEVELOPMENT</string>
+    <string name="role_sevan">PROJECT MANAGER</string>
 
 </resources>

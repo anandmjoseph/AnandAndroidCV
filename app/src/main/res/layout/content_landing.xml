@@ -93,7 +93,88 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.5"
-                android:background="@android:color/background_dark">
+                android:background="@color/colortheme">
+
+                <com.cv.anandmjoseph.anandcv.customwidget.RobotoMediumTextView
+                    android:id="@+id/dashboard_role_tv_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimen_6"
+                    android:text="@string/role_one"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_8" />
+                <com.cv.anandmjoseph.anandcv.customwidget.RobotoMediumTextView
+                    android:id="@+id/dashboard_role_tv_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dashboard_role_tv_one"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dimen_6"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="@string/role_two"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_8" />
+                <com.cv.anandmjoseph.anandcv.customwidget.RobotoMediumTextView
+                    android:id="@+id/dashboard_role_tv_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dashboard_role_tv_two"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_6"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="@string/role_three"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_8" />
+                <com.cv.anandmjoseph.anandcv.customwidget.RobotoMediumTextView
+                    android:id="@+id/dashboard_role_tv_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dashboard_role_tv_three"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dimen_6"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="@string/role_four"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_8" />
+
+                <com.cv.anandmjoseph.anandcv.customwidget.RobotoMediumTextView
+                    android:id="@+id/dashboard_role_tv_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dashboard_role_tv_four"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_6"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="@string/role_five"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_8" />
+
+                <com.cv.anandmjoseph.anandcv.customwidget.RobotoMediumTextView
+                    android:id="@+id/dashboard_role_tv_six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dashboard_role_tv_five"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dimen_6"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="@string/role_six"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_8" />
+
+                <com.cv.anandmjoseph.anandcv.customwidget.RobotoMediumTextView
+                    android:id="@+id/dashboard_role_tv_sevan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dashboard_role_tv_six"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/dimen_6"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text="@string/role_sevan"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_8" />
+
+
             </RelativeLayout>
 
         </LinearLayout>
