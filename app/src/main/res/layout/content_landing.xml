@@ -6,7 +6,6 @@
     android:layout_height="wrap_content"
     tools:context=".ui.LandingActivity"
     android:layout_marginTop="@dimen/dimen_38"
-    tools:showIn="@layout/app_bar_landing"
     android:background="@color/colortheme">
 
     <TextView

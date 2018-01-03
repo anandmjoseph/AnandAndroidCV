@@ -1,5 +1,6 @@
 package com.cv.anandmjoseph.anandcv.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 
 import com.cv.anandmjoseph.anandcv.R;
@@ -29,13 +31,18 @@ public class LandingActivity extends AppCompatActivity
     private Aboutmefour four;
     private ViewPager mPager;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing);
+        init();
+        initaction();
+    }
+
+    private void init(){
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,31 +51,28 @@ public class LandingActivity extends AppCompatActivity
                         .setAction("Action", null).show();
             }
         });
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
-
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setNavigationItemSelectedListener(LandingActivity.this);
+
+    }
+    private void initaction(){
         mPager=(ViewPager)findViewById(R.id.view_pager);
         mPagerDotOne=(RelativeLayout)findViewById(R.id.pagerDotOne);
         mPagerDotTwo=(RelativeLayout)findViewById(R.id.pagerDotTwo);
         mPagerDotThree=(RelativeLayout)findViewById(R.id.pagerDotThree);
         mPagerDotfour=(RelativeLayout)findViewById(R.id.pagerDotfour);
 
-        init();
-    }
-
-    private void init(){
 
         mViewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
         one = new AboutmeOne();
-         two = new Aboutmetwo();
-         three = new Aboutmethree();
-         four = new Aboutmefour();
+        two = new Aboutmetwo();
+        three = new Aboutmethree();
+        four = new Aboutmefour();
 
         mViewPagerAdapter.addFragment(one,getString(R.string.pageone_fragment_text));
         mViewPagerAdapter.addFragment(two,getString(R.string.pagetwo_fragment_text));
@@ -173,7 +177,6 @@ public class LandingActivity extends AppCompatActivity
         }
     }
 
-
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -213,9 +216,13 @@ public class LandingActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+            // Handle the camera
 
+        } else if (id == R.id.nav_gallery) {
+            Intent i = new Intent(LandingActivity.this, ProfessionalExperienceActivity.class);
+            startActivity(i);
+            overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
+            finish();
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
@@ -230,4 +237,5 @@ public class LandingActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }
