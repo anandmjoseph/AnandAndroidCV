@@ -106,7 +106,10 @@ public class ProfessionalExperienceActivity extends AppCompatActivity implements
             overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
             finish();
         } else if (id == R.id.nav_manage) {
-
+             i = new Intent(ProfessionalExperienceActivity.this, ProjectsActivity.class);
+            startActivity(i);
+            overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
+            finish();
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {

@@ -229,7 +229,10 @@ public class LandingActivity extends AppCompatActivity
             overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
             finish();
         } else if (id == R.id.nav_manage) {
-
+            Intent i = new Intent(LandingActivity.this, ProjectsActivity.class);
+            startActivity(i);
+            overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
+            finish();
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {

@@ -20,12 +20,12 @@ import com.cv.anandmjoseph.anandcv.R;
  * Created by Anand M Joseph on 1/4/2018.
  */
 
-public class CareerInterests extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+public class ProjectsActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_career); init();
+        setContentView(R.layout.activity_project); init();
 
     }
 
@@ -46,7 +46,7 @@ public class CareerInterests extends AppCompatActivity implements NavigationView
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(CareerInterests.this);
+        navigationView.setNavigationItemSelectedListener(ProjectsActivity.this);
 
     }
     @Override
@@ -89,22 +89,22 @@ public class CareerInterests extends AppCompatActivity implements NavigationView
 
         if (id == R.id.nav_camera) {
 
-            Intent i = new Intent(CareerInterests.this, LandingActivity.class);
+            Intent i = new Intent(ProjectsActivity.this, LandingActivity.class);
             startActivity(i);
             overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
             finish();
         } else if (id == R.id.nav_gallery) {
-            Intent i = new Intent(CareerInterests.this, ProfessionalExperienceActivity.class);
+            Intent i = new Intent(ProjectsActivity.this, ProfessionalExperienceActivity.class);
             startActivity(i);
             overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
             finish();
         } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-            Intent i = new Intent(CareerInterests.this, ProjectsActivity.class);
+            Intent i = new Intent(ProjectsActivity.this, CareerInterests.class);
             startActivity(i);
             overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
             finish();
+        } else if (id == R.id.nav_manage) {
+
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
