@@ -2,8 +2,6 @@ package com.cv.anandmjoseph.anandcv.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -19,16 +17,15 @@ import android.view.View;
 import com.cv.anandmjoseph.anandcv.R;
 
 /**
- * Created by Anand M Joseph on 1/3/2018.
+ * Created by Anand M Joseph on 1/4/2018.
  */
 
-public class ProfessionalExperienceActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+public class CareerInterests extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_experince);
-        init();
+        setContentView(R.layout.activity_career); init();
 
     }
 
@@ -49,7 +46,7 @@ public class ProfessionalExperienceActivity extends AppCompatActivity implements
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(ProfessionalExperienceActivity.this);
+        navigationView.setNavigationItemSelectedListener(CareerInterests.this);
 
     }
     @Override
@@ -88,23 +85,21 @@ public class ProfessionalExperienceActivity extends AppCompatActivity implements
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
-
-        Intent i;
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
 
-            i= new Intent(ProfessionalExperienceActivity.this, LandingActivity.class);
+            Intent i = new Intent(CareerInterests.this, LandingActivity.class);
             startActivity(i);
             overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
             finish();
         } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-            i = new Intent(ProfessionalExperienceActivity.this, CareerInterests.class);
+            Intent i = new Intent(CareerInterests.this, ProfessionalExperienceActivity.class);
             startActivity(i);
             overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
             finish();
+        } else if (id == R.id.nav_slideshow) {
+
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
