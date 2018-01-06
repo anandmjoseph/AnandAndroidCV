@@ -49,5 +49,39 @@ available immediately.</string>
     <string name="role_five">EMBEDDED APP DEVELOPMENT</string>
     <string name="role_six">REACT NATIVE APP DEVELOPMENT</string>
     <string name="role_sevan">PROJECT MANAGER</string>
+    <string name="com_name_neva">Neva Innovation Labs</string>
+    <string name="com_name_ec">e-Centric Consultancy Service Pvt. Ltd</string>
+        <string name="com_name_so">Sourcebits Technologies</string>
+    <string name="com_name_Lnt">L&amp;T Infotech</string>
+    <string name="com_name_ay">Aymex Services Pvt.Ltd</string>
+    <string name="com_name_ns">Ness Technologies</string>
+
+    <string name="nv_des">Technical Architect</string>
+    <string name="nv_per">2014 August to 2017 September</string>
+    <string name="nv_role">Application Development | Android/WEB/API | Data Visualization | Architecture Product User Interface Road Map | Team Building | Mentoring Code Reviews|Project delivery | Project Architect</string>
+
+    <string name="ec_des">Technical Architect</string>
+    <string name="ec_per">2013 December to 2014 August</string>
+    <string name="ec_role">Application Development | Data Visualization | Architecture Product User Interface Road Map | Team Building | Mentoring Code Reviews|Project delivery | Project Architect</string>
+
+    <string name="ns_des">Member Technical Staff </string>
+    <string name="ns_per">2012 July To 2013 December</string>
+    <string name="ns_role">Application Development | Data Visualization| Mentoring | Code Reviews</string>
+
+    <string name="so_des">Team Lead (Android)</string>
+    <string name="so_per">September 2011 to July 2012</string>
+    <string name="so_role">Application Development | Data Visualization| Mentoring | Code Reviews</string>
+
+    <string name="ln_des">Software Engineer (Android)</string>
+    <string name="ln_per">2009 September - 2011 August</string>
+    <string name="ln_role">Application Development | Data Visualization| Unit testing</string>
+
+    <string name="so_des_on">Software Engineer (Android)</string>
+    <string name="so_per_on">2008 December to 2009 September</string>
+    <string name="so_role_on">Application Development | Code Reviews</string>
+
+    <string name="ay_des">Software Engineer (J2EE/Jboss/Spring)</string>
+    <string name="ay_per">2007 December-2008 November</string>
+    <string name="ay_role">Application Development</string>
 
 </resources>

@@ -13,7 +13,7 @@ import android.widget.TextView;
 /**
  * Custom TextView with Roboto Bold font Created by neva coders on 15/11/2016.
  */
-public class RobotoBoldTextView extends AppCompatEditText {
+public class RobotoBoldTextView extends AppCompatTextView  {
 
 	public RobotoBoldTextView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);

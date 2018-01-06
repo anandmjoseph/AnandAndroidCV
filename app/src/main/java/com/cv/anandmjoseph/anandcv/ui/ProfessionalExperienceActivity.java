@@ -11,23 +11,34 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 import com.cv.anandmjoseph.anandcv.R;
+import com.cv.anandmjoseph.anandcv.adapter.ExperienceAdapter;
+import com.cv.anandmjoseph.anandcv.data.ExperienceData;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Anand M Joseph on 1/3/2018.
  */
 
 public class ProfessionalExperienceActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+    private List<ExperienceData> mExperienceData = new ArrayList<>();
+    private ExperienceAdapter mAdapter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_experince);
+        updatedata();
         init();
 
     }
@@ -51,7 +62,29 @@ public class ProfessionalExperienceActivity extends AppCompatActivity implements
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(ProfessionalExperienceActivity.this);
 
+        RecyclerView rv = (RecyclerView)findViewById(R.id.recycler_view);
+        rv.setHasFixedSize(true);
+        mAdapter=new ExperienceAdapter(mExperienceData);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+        rv.setLayoutManager(mLayoutManager);
+        rv.setItemAnimator(new DefaultItemAnimator());
+        rv.setAdapter(mAdapter);
+
+
     }
+
+    private void updatedata(){
+
+        mExperienceData = new ArrayList<>();
+        mExperienceData.add(new ExperienceData(R.string.com_name_neva,R.string.nv_role,R.string.nv_des,R.string.nv_per, R.drawable.nevaic));
+        mExperienceData.add(new ExperienceData(R.string.com_name_ec,R.string.ec_role,R.string.ec_des,R.string.ec_per, R.drawable.ecic));
+        mExperienceData.add(new ExperienceData(R.string.com_name_ns,R.string.ns_role,R.string.ns_des,R.string.ns_per, R.drawable.nsic));
+        mExperienceData.add(new ExperienceData(R.string.com_name_so,R.string.so_role,R.string.so_des,R.string.so_per, R.drawable.soic));
+        mExperienceData.add(new ExperienceData(R.string.com_name_Lnt,R.string.ln_role,R.string.ln_des,R.string.ln_per, R.drawable.lnic));
+        mExperienceData.add(new ExperienceData(R.string.com_name_so,R.string.so_role_on,R.string.so_des_on,R.string.so_per_on, R.drawable.soic));
+        mExperienceData.add(new ExperienceData(R.string.com_name_ay,R.string.ay_role,R.string.ay_des,R.string.ay_per, R.drawable.ayic));
+    }
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

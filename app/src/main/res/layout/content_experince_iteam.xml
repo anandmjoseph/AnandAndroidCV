@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimen_6"
+    android:layout_marginRight="@dimen/dimen_6"
+    android:layout_marginTop="@dimen/dimen_20"
+    android:layout_marginBottom="@dimen/dimen_6"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.v7.widget.CardView
+    android:id="@+id/exp_cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="@dimen/dimen_76"
+            android:layout_height="@dimen/dimen_76"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/nevaic"/>
+
+    <com.cv.anandmjoseph.anandcv.customwidget.RobotoBoldTextView
+        android:id="@+id/company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:textSize="@dimen/font_11"
+        android:textColor="@android:color/black"
+        android:text="@string/com_name_neva" />
+
+        <com.cv.anandmjoseph.anandcv.customwidget.RobotoMediumTextView
+            android:id="@+id/company_period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:layout_below="@+id/company_name"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:textSize="@dimen/font_8"
+            android:textColor="@android:color/black"
+            android:text="@string/nv_per" />
+
+        <com.cv.anandmjoseph.anandcv.customwidget.RobotoMediumTextView
+            android:id="@+id/company_desiganation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/company_period"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:textSize="@dimen/font_8"
+            android:textColor="@android:color/black"
+            android:text="@string/nv_des" />
+
+        <com.cv.anandmjoseph.anandcv.customwidget.RobotoLightTextView
+            android:id="@+id/company_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/company_desiganation"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginBottom="@dimen/dimen_6"
+            android:textSize="@dimen/font_8"
+            android:textColor="@android:color/black"
+            android:text="@string/nv_role" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+</RelativeLayout>
